@@ -6,7 +6,7 @@
 ## Warnings
 * ⚠ All of the Brython code is owned by the authors of **[brython-dev/brython](https://github.com/brython-dev/brython)** and i have no intention to misuse the code ⚠
 * **[jsRUNpy](https://downgit.github.io/#/home?url=https://github.com/MP3Martin/jsRUNpy.js/blob/main/jsRUNpy.js)** is used standalone, all dependencies are included
-* Use at own risk, bugs may be present!
+* Use at your own risk, bugs may be present!
 
 ## Usage + examples
 1. Download **[jsRUNpy.js](https://downgit.github.io/#/home?url=https://github.com/MP3Martin/jsRUNpy.js/blob/main/jsRUNpy.js)**

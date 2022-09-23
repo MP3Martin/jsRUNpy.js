@@ -9,4 +9,5 @@
 * Use at own risk, bugs may be present!
 
 ## Usage + examples
-* todo
+1. Download **[jsRUNpy.js](https://downgit.github.io/#/home?url=https://github.com/MP3Martin/jsRUNpy.js/blob/main/jsRUNpy.js)**
+* TODO more

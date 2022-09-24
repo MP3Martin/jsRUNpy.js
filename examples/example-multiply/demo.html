@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function onlyNumberKey(e){var h=e.which?e.which:e.keyCode;return!(h>31&&(h<48||h>57))}
+        </script>
+
+        <script>
+            function jsRUNpy_did_load() {
+                document.addEventListener("DOMContentLoaded", function(){
+                    // un-disable input fields because jsRUNpy has loaded
+                    document.getElementsByClassName("result")[0].textContent = "Result: "
+                    for (el of document.getElementsByClassName("inp")) {
+                        el.disabled = false
+                    }
+                    document.getElementsByClassName('one')[0].value = ""
+                    document.getElementsByClassName('two')[0].value = ""
+
+                    // add enter support
+                    for (el of document.getElementsByClassName("inp_num")) {
+                        el.onkeydown= e => (e.key=="Enter") ? document.getElementsByClassName("button")[0].click() : 1
+                    }
+                });
+            }
+
+            // this is the main part
+            function multiply(one, two) {
+                jsRUNpy.run("return int(num_one * num_two)", {num_one: one, num_two: two}).then(out => {
+                    document.getElementsByClassName("output")[0].textContent = out
+                })
+            }
+        </script>
+        <script src="https://cdn.jsdelivr.net/gh/MP3Martin/jsRUNpy.js@latest/jsRUNpy.min.js" onload="jsRUNpy_did_load()"></script>
+    </head>
+    <body>
+        <input disabled type="number" placeholder="Number 1" class="inp one inp_num" onkeypress="return onlyNumberKey(event)" />
+        <input disabled type="number" placeholder="Number 2" class="inp two inp_num" onkeypress="return onlyNumberKey(event)" />
+        <br />
+        <button disabled class="inp button" onclick="multiply(parseInt(document.getElementsByClassName('one')[0].value), parseInt(document.getElementsByClassName('two')[0].value))">Multiply</button>
+        <br /><br />
+        <span class="result">Loading...</span> <span class="output"></span>
+    </body>
+</html>

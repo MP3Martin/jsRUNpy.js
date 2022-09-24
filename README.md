@@ -48,3 +48,14 @@
 > ```js
 > jsRUNpy.run("print(1)\nprint(2)")
 > ```
+
+---
+
+> ```js
+> test = "Hello!"
+> jsRUNpy.run(`
+> from browser import window
+> window["test"] = "Hi!"
+> `)
+> .then(()=>{console.log(test)})
+> ```

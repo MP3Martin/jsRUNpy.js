@@ -16,3 +16,16 @@
 
 ## Fully working example
 * can be found [here](https://codesandbox.io/s/github/MP3Martin/jsRUNpy.js/tree/main/examples/example-multiply?file=/index.html), source [here](https://github.com/MP3Martin/jsRUNpy.js/blob/main/examples/example-multiply/index.html)
+
+## Usage / examples
+> ```js
+> jsRUNpy.run("print(test)", {test: "Hello World!"}) 
+> ```
+
+> is same as
+
+> ```js
+> jsRUNpy.run("print('Hello World!')") 
+> ```
+___
+

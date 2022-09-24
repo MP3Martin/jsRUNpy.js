@@ -8,6 +8,5 @@
 * **[jsRUNpy](https://downgit.github.io/#/home?url=https://github.com/MP3Martin/jsRUNpy.js/blob/main/jsRUNpy.js)** is used standalone, all dependencies are included
 * Use at your own risk, bugs may be present!
 
-## Usage + examples
-1. Download **[jsRUNpy.js](https://downgit.github.io/#/home?url=https://github.com/MP3Martin/jsRUNpy.js/blob/main/jsRUNpy.js)**
-* TODO more
+## Installation
+1. Add `<script src="https://cdn.jsdelivr.net/gh/MP3Martin/jsRUNpy.js@latest/jsRUNpy.min.js"></script>` inside head in your html file

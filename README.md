@@ -14,5 +14,5 @@
 <script src="https://cdn.jsdelivr.net/gh/MP3Martin/jsRUNpy.js@latest/jsRUNpy.min.js"></script>
 ```
 
-## Full working example
+## Fully working example
 * can be found [here](https://codesandbox.io/s/github/MP3Martin/jsRUNpy.js/tree/main/examples/example-multiply?file=/index.html), source [here](https://github.com/MP3Martin/jsRUNpy.js/blob/main/examples/example-multiply/index.html)

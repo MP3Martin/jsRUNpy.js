@@ -27,5 +27,24 @@
 > ```js
 > jsRUNpy.run("print('Hello World!')") 
 > ```
-___
 
+---
+
+> ```js
+> jsRUNpy.run("return 33 + 77").then(out => {console.log("Python code outputted: " + out)})
+> ```
+
+---
+
+> ```js
+> jsRUNpy.run(`
+> print(1)
+> print(2)
+> `)
+> ```
+
+> is same as
+
+> ```js
+> jsRUNpy.run("print(1)\nprint(2)")
+> ```

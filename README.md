@@ -9,7 +9,10 @@
 * Use at your own risk, bugs may be present!
 
 ## Installation
-1. Add **🠇** inside head in your html file
+1. Add **🠇** inside `<head>` tags in your html file
 ```html
 <script src="https://cdn.jsdelivr.net/gh/MP3Martin/jsRUNpy.js@latest/jsRUNpy.min.js"></script>
 ```
+
+## Full working example
+* can be found [here](https://codesandbox.io/s/github/MP3Martin/jsRUNpy.js/tree/main/examples/example-multiply?file=/index.html), source [here](https://github.com/MP3Martin/jsRUNpy.js/blob/main/examples/example-multiply/index.html)

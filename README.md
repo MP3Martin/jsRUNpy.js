@@ -57,6 +57,5 @@
 > jsRUNpy.run(`
 > from browser import window
 > window["test"] = "Hi!"
-> `)
-> .then(()=>{console.log(test)})
+> `).then(()=>{console.log(test)})
 > ```

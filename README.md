@@ -9,7 +9,7 @@
 * Use at your own risk, bugs may be present!
 
 ## Installation
-1. Add ⬇ inside head in your html file
+1. Add 🠇 inside head in your html file
 ```html
 <script src="https://cdn.jsdelivr.net/gh/MP3Martin/jsRUNpy.js@latest/jsRUNpy.min.js"></script>
 ```

@@ -250,7 +250,7 @@ window.jsRUNpy.run = async function(code, variables = {}) {
                return reject("Error: 'code' argument must be a string!")
             }
             if (Object.prototype.toString.call(variables) !== '[object Object]') {
-                return reject("Error: 'variables' argument must be a dictionary!")
+                return reject("Error: 'variables' argument must be a dictionary (object)!")
             }
         // end of type checking
 

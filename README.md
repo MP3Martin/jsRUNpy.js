@@ -41,8 +41,8 @@
 
 > ```js
 > (async () => {
->   out = await jsRUNpy.run("return 33 + 77")
-> 	console.log("Python code outputted: " + out)
+>    out = await jsRUNpy.run("return 33 + 77")
+>    console.log("Python code outputted: " + out)
 > })()
 > ```
 

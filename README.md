@@ -37,6 +37,15 @@
 > jsRUNpy.run("return 33 + 77").then(out => {console.log("Python code outputted: " + out)})
 > ```
 
+> is same as
+
+> ```js
+> (async () => {
+>   out = await jsRUNpy.run("return 33 + 77")
+> 	console.log("Python code outputted: " + out)
+> })()
+> ```
+
 ---
 
 > ```js

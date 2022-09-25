@@ -9,7 +9,7 @@
 * Use at your own risk, bugs may be present!
 > **Warning**:
 
-* **IF YOU WANT TO USE `jsRUNpy.run()` more than once, YOU MUST RUN THE PYTHON CODE IN ASNYC FUNCTION USING AWAIT**
+* **IF YOU WANT TO USE `jsRUNpy.run()` MORE THAN ONCE, YOU MUST USE IT IN AN ASNYC FUNCTION USING AWAIT**
 
 ## Installation
 1. Add **🠇** inside `<head>` tags in your html file

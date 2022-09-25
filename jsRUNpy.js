@@ -156,7 +156,7 @@ window.jsRUNpy.run = async function(code, variables = {}) {
     async function run_exec(code) {
         brython(jsRUNpy.config.br_config);
 
-        uniqueID = Date.now().toString()
+        uniqueID = Math.floor(((Date.now() * Math.floor(Math.random() * 1000)) + Math.floor(Math.random() * 10) + 1)/2).toString()
 
         check_all_old_brython();
 

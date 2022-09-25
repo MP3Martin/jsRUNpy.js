@@ -231,6 +231,7 @@ else:
 }
 
 window.jsRUNpy.run = (() => {
+    // We can use the run() function in synchronous functions thanks to https://stackoverflow.com/users/351705/yury-tarabanko @ https://stackoverflow.com/a/53540586/10518428 ♥
     let pending = Promise.resolve();
     
     run = async (...args) => {

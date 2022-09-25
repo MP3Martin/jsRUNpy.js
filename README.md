@@ -17,6 +17,16 @@
 ## Fully working example
 * can be found [here](https://codesandbox.io/s/github/MP3Martin/jsRUNpy.js/tree/main/examples/example-multiply?file=/index.html), source [here](https://github.com/MP3Martin/jsRUNpy.js/blob/main/examples/example-multiply/index.html)
 
+## Functions
+
+|Emoji|Meaning|
+|--|--|
+|✅|Mandatory argument|
+|🟨|Optional argument|
+
+* ### **`jsRUNpy.run()`**
+  * **`jsRUNpy.run(`** ✅code: string **`,`** 🟨variables: object **`)`**
+
 ## Usage / examples
 > ```js
 > jsRUNpy.run("print(test)", {test: "Hello World!"}) 

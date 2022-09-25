@@ -25,7 +25,7 @@
 |🟨|Optional argument|
 
 * ### **`jsRUNpy.run()`**
-  * **`jsRUNpy.run(`** ✅code: string **`,`** 🟨variables: object **`)`**
+  * **`jsRUNpy.run(`** ✅**code**: *string* **`,`** 🟨**variables**: *object* **`)`**
 
 ## Usage / examples
 > ```js

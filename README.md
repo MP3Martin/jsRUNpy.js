@@ -11,7 +11,7 @@
 ## Installation
 1. Add **🠇** inside `<head>` tags in your html file
 ```html
-<script src="https://cdn.jsdelivr.net/gh/MP3Martin/jsRUNpy.js@latest/jsRUNpy.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/MP3Martin/jsRUNpy.js@1/jsRUNpy.min.js"></script>
 ```
 
 ## Fully working example

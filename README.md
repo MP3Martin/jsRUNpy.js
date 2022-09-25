@@ -68,3 +68,11 @@
 > window["test"] = "Hi!"
 > `).then(()=>{console.log(test)})
 > ```
+
+---
+
+> ```js
+> for (i = 0; i <= 10; i++) {
+>   jsRUNpy.run("print(i)", {i: i})
+> }
+> ```

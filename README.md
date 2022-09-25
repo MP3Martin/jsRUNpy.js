@@ -58,6 +58,14 @@
 > jsRUNpy.run("print(1)\nprint(2)")
 > ```
 
+> and is same as
+
+> ```js
+> for (i = 1; i <= 2; i++) {
+>   jsRUNpy.run("print(i)", {i: i})
+> }
+> ```
+
 ---
 
 > ```js

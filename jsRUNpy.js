@@ -123,8 +123,10 @@ window.jsRUNpy = {
     }
 }
 
-window.jsRUNpy.$sysRun = async function(code, variables = {}) {
-    code = code.replace(/"[^"]*(?:""[^"]*)*"/g, function(m) { return m.replace(/\n/g, '\\\n'); }) // replace all newline characters in a string with \\\n
+window.jsRUNpy.$sysRun = async function(code, variables) {
+    try {
+        code = code.replace(/"[^"]*(?:""[^"]*)*"/g, function(m) { return m.replace(/\n/g, '\\\n'); }) // replace all newline characters in a string with \\\n
+    } catch (e) {}
 
     runconsole_scripts = __BRYTHON__.parser._run_scripts
 
@@ -169,12 +171,6 @@ window.jsRUNpy.$sysRun = async function(code, variables = {}) {
         // window.jsRUNpy.$runners["p" + uniqueID] = uniqueID
         window.jsRUNpy.$runners["p" + uniqueID] = {}
         window.jsRUNpy.$runners["p" + uniqueID].promise = jsRUNpy.$utils.createDeferredPromise()
-
-        if (Object.prototype.toString.call(variables) === '[object Object]') {
-            //
-        } else {
-            my_reject(uniqueID, "Error: 'variables' argument must be a dictionary!")
-        }
 
         window.jsRUNpy.$runners["p" + uniqueID].vars = variables
 
@@ -230,8 +226,9 @@ else:
     return await run_exec(code);
 }
 
-window.jsRUNpy.run = (() => {
+window.jsRUNpy.$sysRunQueue = (() => {
     // We can use the run() function in synchronous functions thanks to https://stackoverflow.com/users/351705/yury-tarabanko @ https://stackoverflow.com/a/53540586/10518428 ♥
+
     let pending = Promise.resolve();
     
     run = async (...args) => {
@@ -245,3 +242,18 @@ window.jsRUNpy.run = (() => {
     // update pending promise so that next task could await for it
     return (...args) => (pending = run(...args))
 })();
+
+window.jsRUNpy.run = async function(code, variables = {}) {
+    return new Promise(function(resolve, reject) {
+        // type checking
+            if (typeof code != "string") {
+               return reject("Error: 'code' argument must be a string!")
+            }
+            if (Object.prototype.toString.call(variables) !== '[object Object]') {
+                return reject("Error: 'variables' argument must be a dictionary!")
+            }
+        // end of type checking
+
+        return resolve(window.jsRUNpy.$sysRunQueue(code, variables))
+    });
+}

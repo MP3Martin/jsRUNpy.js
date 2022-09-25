@@ -103,10 +103,11 @@ window.jsRUNpy = {
             return Object.assign(promise, {resolve, reject})
         },
 
-        delete_var: function(variable) {
-            eval("delete " + variable)
+        delete_var: function(variable, delay = 0) {
+            setTimeout(function(){
+                eval("delete " + variable)
+            }, delay)
         }
-
     },
 
     $runners: {
@@ -201,7 +202,7 @@ except Exception as e:
     window.jsRUNpy["$utils"].delete_var("window.jsRUNpy['$runners']['p' + ${uniqueID}]")
     thisRunner.reject(f"{type(e).__name__}: {e}")
 else:
-    window.jsRUNpy["$utils"].delete_var("window.jsRUNpy['$runners']['p' + ${uniqueID}]")
+    window.jsRUNpy["$utils"].delete_var("window.jsRUNpy['$runners']['p' + ${uniqueID}]", 200)
     thisRunner.resolve(L${uniqueID}L)`
 
         // console.log(modifiedCode)

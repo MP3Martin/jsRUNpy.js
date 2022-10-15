@@ -33,8 +33,8 @@
         <script src="https://cdn.jsdelivr.net/gh/MP3Martin/jsRUNpy.js@1/jsRUNpy.min.js" onload="jsRUNpy_did_load()"></script>
     </head>
     <body>
-        <input disabled type="number" placeholder="Number 1" class="inp one inp_num" onkeypress="return onlyNumberKey(event)" />
-        <input disabled type="number" placeholder="Number 2" class="inp two inp_num" onkeypress="return onlyNumberKey(event)" />
+        <input disabled type="text" maxlength="6" placeholder="Number 1" class="inp one inp_num" onkeypress="return onlyNumberKey(event)" />
+        <input disabled type="text" maxlength="6" placeholder="Number 2" class="inp two inp_num" onkeypress="return onlyNumberKey(event)" />
         <br />
         <button disabled class="inp button" onclick="multiply(parseInt(document.getElementsByClassName('one')[0].value), parseInt(document.getElementsByClassName('two')[0].value))">Multiply</button>
         <br /><br />

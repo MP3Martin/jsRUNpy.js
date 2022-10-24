@@ -23,4 +23,4 @@ jobs:
           
       - run: ./_TMP_/crunchme-0.4/bin/crunchme-linux-amd64 -nostrip ./src/main.js jsRUNpy.js
       # - run: echo "$(cat jsRUNpy.js)"
-      - run: rm -r _TMP_
+      - run: sudo rm -r _TMP_

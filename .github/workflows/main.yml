@@ -15,3 +15,4 @@ jobs:
       - uses: montudor/action-zip@v1
         with:
           args: unzip min.zip
+      - run: dir

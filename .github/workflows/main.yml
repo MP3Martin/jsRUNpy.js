@@ -11,9 +11,5 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 16
-      - run: npm install crunchme
-      - run: crunchme -V
+      - run: curl https://master.dl.sourceforge.net/project/crunchme/v0.4/crunchme-0.4.zip?viasf=1 -o tmp/min.zip
+      - run: unzip tmp/min.zip

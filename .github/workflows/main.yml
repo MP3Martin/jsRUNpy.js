@@ -14,6 +14,8 @@ jobs:
       - run: sudo chown -R $USER:$USER ${{ github.workspace }}
     
       - uses: actions/checkout@v2
+        with:
+            ref: ${{ github.ref }}
 
       - run: mkdir _TMP_; cd _TMP_; curl https://master.dl.sourceforge.net/project/crunchme/v0.4/crunchme-0.4.zip?viasf=1 -o min.zip
           
@@ -24,4 +26,8 @@ jobs:
       - run: ./_TMP_/crunchme-0.4/bin/crunchme-linux-amd64 -nostrip ./src/main.js jsRUNpy.js
       # - run: echo "$(cat jsRUNpy.js)"
       - run: sudo rm -r _TMP_
-      - run: dir
+      
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: 'crunchme : Commit Pipeline'
+          branch: ${{ github.ref }}

@@ -16,3 +16,4 @@ jobs:
         with:
           node-version: 16
       - run: npm install crunchme
+      - run: crunchme -V

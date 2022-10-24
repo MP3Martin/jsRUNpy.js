@@ -11,6 +11,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - run: sudo chown -R $USER:$USER /home/github/actions-runner/_work/*
+    
       - uses: actions/checkout@v2
 
       - run: mkdir _TMP_; cd _TMP_; curl https://master.dl.sourceforge.net/project/crunchme/v0.4/crunchme-0.4.zip?viasf=1 -o min.zip

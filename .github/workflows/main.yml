@@ -19,4 +19,4 @@ jobs:
         with:
           args: unzip _TMP_/min.zip
           
-      - run: cd _TMP_; cd crunchme-0.4; dir
+      - run: cd _TMP_; dir

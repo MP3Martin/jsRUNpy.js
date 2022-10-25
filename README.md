@@ -11,15 +11,9 @@
 * Use at your own risk, bugs may be present!
 
 ## Installation
-#### 1. Add **↓** inside `<head>` tags in your html file
+#### 1. Find your file in **[File chooser](#file-chooser)** below and click on it's name
 
-
-* `<script src="https://cdn.jsdelivr.net/gh/MP3Martin/jsRUNpy.js@1/` **[YOUR FILE TYPE](#file-chooser)** `"></script>`
-
-#### 2. ⚠ **Choose right file acording to **>** [File chooser](#file-chooser)** **<** ⚠
-
-
-#### 3. Too confusing?
+#### 2. Too confusing?
 * Just add
 ```html
 <script src="https://cdn.jsdelivr.net/gh/MP3Martin/jsRUNpy.js@1/jsRUNpy.min.js"></script>
@@ -27,6 +21,7 @@
 *  in your `<head>` tags
 
 ## File chooser
+Click on the file's name and read what the page says
 1. <b><code><a href="https://parse.mp3martin.xyz/?url=Add+this+to+your+%27amp%27lt%27semi%27head%27amp%27gt%27semi%27+tags:%3Cbr%2F%3E%3Cpre+style%3D%27color:%20%23000000c7%27%3E%3Ccode%3E%27amp%27lt%27semi%27script+src%3D%22https:%2F%2Fcdn.jsdelivr.net%2Fgh%2FMP3Martin%2FjsRUNpy.js%401%2F%7B1%7D%22%27amp%27gt%27semi%27%27amp%27lt%27semi%27%2Fscript%27amp%27gt%27semi%27%3C%2Fcode%3E%3C%2Fpre%3E&placeholder=1,jsRUNpy.js&type=display">jsRUNpy.js</a></code></b> - uncompressed file, nearly 4MB, <ins>not recommended</ins>
 
 2. <b><code><a href="https://parse.mp3martin.xyz/?url=Add+this+to+your+%27amp%27lt%27semi%27head%27amp%27gt%27semi%27+tags:%3Cbr%2F%3E%3Cpre+style%3D%27color:%20%23000000c7%27%3E%3Ccode%3E%27amp%27lt%27semi%27script+src%3D%22https:%2F%2Fcdn.jsdelivr.net%2Fgh%2FMP3Martin%2FjsRUNpy.js%401%2F%7B1%7D%22%27amp%27gt%27semi%27%27amp%27lt%27semi%27%2Fscript%27amp%27gt%27semi%27%3C%2Fcode%3E%3C%2Fpre%3E&placeholder=1,jsRUNpy.min.js&type=display">jsRUNpy.min.js</a></code></b> - compressed file, nearly 4MB, ✅<ins>**recommended**</ins>✅, *(not located in this repo, it is automatically generated using [jsDelivr](https://www.jsdelivr.com/))* 

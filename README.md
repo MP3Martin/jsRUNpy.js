@@ -5,7 +5,7 @@
 
 ## Warnings
 * ⚠ **All of the Brython code is owned by the authors of** [<img src="https://camo.githubusercontent.com/b079fe922f00c4b86f1b724fbc2e8141c468794ce8adbc9b7456e5e1ad09c622/68747470733a2f2f6564656e742e6769746875622e696f2f537570657254696e7949636f6e732f696d616765732f7376672f6769746875622e737667" alt="gh" width="18"/>](https://github.com/brython-dev/brython) **[brython-dev/brython](https://github.com/brython-dev/brython)** **and i have no intention to misuse the code** ⚠
-* ⚠ **This package is 1MB - 4MB (depending on [this](#three-file-types-with-same-result)) in size,** **not recommended for production** ⚠
+* ⚠ **This package is 1MB - 4MB (depending on [File chooser](#file-chooser)) in size,** **not recommended for production** ⚠
 * This package is used standalone, all dependencies are included
 * Not tested concurrently with Brython
 * Use at your own risk, bugs may be present!
@@ -15,9 +15,9 @@
 ```html
 <script src="https://cdn.jsdelivr.net/gh/MP3Martin/jsRUNpy.js@1/jsRUNpy.min.js"></script>
 ```
-#### ⚠ **Choose right file acording to **>** [this](#three-file-types-with-same-result)** **<** ⚠
+#### ⚠ **Choose right file acording to **>** [File chooser](#file-chooser)** **<** ⚠
 
-## Three file types (with same result)
+## File chooser
 1. **`jsRUNpy.js`** - uncompressed file, <ins>not recommended</ins>
 
 2. **`jsRUNpy.min.js`** - compressed file, nearly 4MB, ✅<ins>**recommended**</ins>✅, *(not located in this repo, it is automatically generated using [jsDelivr](https://www.jsdelivr.com/))* 

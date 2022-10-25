@@ -19,7 +19,9 @@
 
 ## Three file types (with same result)
 1. **`jsRUNpy.js`** - uncompressed file, <ins>not recommended</ins>
-2. **`jsRUNpy.min.js`** - compressed file, nearly 4MB, ✅<ins>**recommended**</ins>✅, *(not located in this repo, it is automatically generated using [jsDelivr](https://www.jsdelivr.com/))*
+
+2. **`jsRUNpy.min.js`** - compressed file, nearly 4MB, ✅<ins>**recommended**</ins>✅, *(not located in this repo, it is automatically generated using [jsDelivr](https://www.jsdelivr.com/))* 
+
 3. **`jsRUNpy.min.extreme.js`** - extremely compressed file using [<img src="https://camo.githubusercontent.com/b079fe922f00c4b86f1b724fbc2e8141c468794ce8adbc9b7456e5e1ad09c622/68747470733a2f2f6564656e742e6769746875622e696f2f537570657254696e7949636f6e732f696d616765732f7376672f6769746875622e737667" alt="gh" width="18"/>](https://github.com/brython-dev/brython) **[streamich/crunchme](https://github.com/streamich/crunchme)**, nearly 1MB, not recommended, ¼ size of the recommended file, but can <ins>lag your browser</ins> for a few seconds (depending on the hardware)
 
 ## Fully working example

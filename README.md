@@ -23,7 +23,7 @@
 * Just add `<script src="https://cdn.jsdelivr.net/gh/MP3Martin/jsRUNpy.js@1/jsRUNpy.min.js"></script>` in your `<head>` tags
 
 ## File chooser
-1. **`jsRUNpy.js`** - uncompressed file, <ins>not recommended</ins>
+1. **`jsRUNpy.js`** - uncompressed file, nearly 4MB, <ins>not recommended</ins>
 
 2. **`jsRUNpy.min.js`** - compressed file, nearly 4MB, ✅<ins>**recommended**</ins>✅, *(not located in this repo, it is automatically generated using [jsDelivr](https://www.jsdelivr.com/))* 
 

@@ -13,7 +13,7 @@
 ## Installation
 #### 1. Find your file in **[File chooser](#file-chooser)** below and click on it's name
 
-#### 2. Too confusing?
+#### 2. Was the step 1 too confusing?
 * Just add
 ```html
 <script src="https://cdn.jsdelivr.net/gh/MP3Martin/jsRUNpy.js@1/jsRUNpy.min.js"></script>

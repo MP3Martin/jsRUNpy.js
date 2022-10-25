@@ -20,7 +20,11 @@
 
 
 #### 3. Too confusing?
-* Just add `<script src="https://cdn.jsdelivr.net/gh/MP3Martin/jsRUNpy.js@1/jsRUNpy.min.js"></script>` in your `<head>` tags
+* Just add
+```html
+<script src="https://cdn.jsdelivr.net/gh/MP3Martin/jsRUNpy.js@1/jsRUNpy.min.js"></script>
+```
+*  in your `<head>` tags
 
 ## File chooser
 1. **`jsRUNpy.js`** - uncompressed file, nearly 4MB, <ins>not recommended</ins>

@@ -11,11 +11,16 @@
 * Use at your own risk, bugs may be present!
 
 ## Installation
-1. Add **↓** inside `<head>` tags in your html file
-```html
-<script src="https://cdn.jsdelivr.net/gh/MP3Martin/jsRUNpy.js@1/jsRUNpy.min.js"></script>
-```
-#### ⚠ **Choose right file acording to **>** [File chooser](#file-chooser)** **<** ⚠
+#### 1. Add **↓** inside `<head>` tags in your html file
+
+
+* `<script src="https://cdn.jsdelivr.net/gh/MP3Martin/jsRUNpy.js@1/` **[YOUR FILE TYPE](#file-chooser)** `"></script>`
+
+#### 2. ⚠ **Choose right file acording to **>** [File chooser](#file-chooser)** **<** ⚠
+
+
+#### 3. Too confusing?
+* Just add `<script src="https://cdn.jsdelivr.net/gh/MP3Martin/jsRUNpy.js@1/jsRUNpy.min.js"></script>` in your `<head>` tags
 
 ## File chooser
 1. **`jsRUNpy.js`** - uncompressed file, <ins>not recommended</ins>

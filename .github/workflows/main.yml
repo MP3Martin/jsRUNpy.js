@@ -29,5 +29,5 @@ jobs:
       
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: 'crunchme : Commit Pipeline'
+          commit_message: 'build : Commit Pipeline'
           branch: ${{ github.ref }}

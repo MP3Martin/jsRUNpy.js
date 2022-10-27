@@ -1,3 +1,11 @@
+[![CodeFactor](https://www.codefactor.io/repository/github/MP3Martin/jsRUNpy.js/badge)](#/)
+[<img src="https://img.shields.io/github/license/MP3Martin/jsRUNpy.js">](#/)
+[<img src="https://img.shields.io/github/stars/MP3Martin/jsRUNpy.js">](#/)
+[<img src="https://img.shields.io/github/forks/MP3Martin/jsRUNpy.js">](#/)
+[<img src="https://img.shields.io/github/issues/MP3Martin/jsRUNpy.js">](#/)
+----
+[<img src="https://github.com/MP3Martin/jsRUNpy.js/workflows/main/badge.svg">](#/)
+
 # jsRUNpy - use Brython to run any Python code with JS
 * returns promise that is resolved when the code finishes
 * if the Python code returns something, it gets set as the promise's value

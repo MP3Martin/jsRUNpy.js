@@ -16,6 +16,12 @@ jobs:
       - uses: actions/checkout@v2
         with:
             ref: ${{ github.ref }}
+            
+      - name: Semistandard
+        uses: MP3Martin/semistandard-action@master
+        continue-on-error: true
+        with:
+          args: --fix
 
       - run: mkdir _TMP_; cd _TMP_; curl https://master.dl.sourceforge.net/project/crunchme/v0.4/crunchme-0.4.zip?viasf=1 -o min.zip
           

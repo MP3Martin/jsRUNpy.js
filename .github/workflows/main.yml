@@ -17,11 +17,17 @@ jobs:
         with:
             ref: ${{ github.ref }}
             
+      - run: echo "jsRUNpy.min.extreme.js" > .gitignore
+            
       - name: Semistandard
         uses: MP3Martin/semistandard-action@master
         continue-on-error: true
         with:
           args: --fix
+          
+      - run: sudo rm .gitignore
+          
+      - run: cat ./src/1_begin.min.js ./src/2_brython.min.js ./src/3_brython_stdlib.min.js ./src/4_jsRUNpy.js > ./src/main.js
 
       - run: mkdir _TMP_; cd _TMP_; curl https://master.dl.sourceforge.net/project/crunchme/v0.4/crunchme-0.4.zip?viasf=1 -o min.zip
           

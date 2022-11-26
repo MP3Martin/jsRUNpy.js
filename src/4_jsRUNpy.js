@@ -204,4 +204,3 @@ window.jsRUNpy.run = async function (code, variables = {}) {
     return resolve(window.jsRUNpy.$sysRunQueue(code, variables));
   });
 };
-

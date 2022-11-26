@@ -108,8 +108,10 @@ window.jsRUNpy = {
         delete_var: function(variable, delay = 0) {
             setTimeout(function(){
                 try {
+                    // eslint-disable-next-line no-use-before-define
                     eval("delete " + variable)
                 } catch (e) {
+                    // eslint-disable-next-line no-use-before-define
                     eval("delete p" + variable)
                 }
             }, delay)
